@@ -7,15 +7,17 @@
 /* Custom properties*/
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-third: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Lora', serif;
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
-    --fw-bold: 900;
+    --fw-bold: 700;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #EFEFE8FF;
+    --clr-dark: #101820FF;
+    --clr-accent: #dd7f2a;
+    --clr-medium: #505050;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -184,11 +186,15 @@ header {
 }
 
 .nav-toggle {
-    padding: .5em;
+    padding: .2em;
+    padding-right: 3em;
+    padding-left: 0;
+    padding-top: .4em;
+    padding-bottom: .6em;
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -216,7 +222,7 @@ header {
 
 .hamburger {
     display: block;
-    position: relative;
+    position: fixed;
 
 }
 
@@ -224,8 +230,8 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
+    width: 3em;
+    height: 3.5px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 
@@ -239,8 +245,8 @@ header {
     right: 0;
 }
 
-.hamburger::before { top:6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top:8px; }
+.hamburger::after { bottom: 8px; }
 
 
 /* intro Section */
@@ -262,6 +268,8 @@ header {
         display: grid;
         width: min-content;
         margin: 0 auto;
+        margin-bottom: 4em;
+        margin-top: 2em;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
@@ -393,6 +401,8 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*min 300px but if has room it will*/
+    max-width: 1000px; /*added */
+    margin: 0 auto; /*added */
     /* max-width: ; margin: 0 auto; for a max width to the projects so it not one long string */
 
 }
@@ -417,7 +427,7 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: .85;
+    opacity: .65;
 }
 
 .footer {
@@ -474,4 +484,6 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    
 }
+
