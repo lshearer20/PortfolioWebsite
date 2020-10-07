@@ -299,7 +299,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(../img/services-bg-darker.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
@@ -484,6 +484,53 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    
 }
+
+.added {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 12px 0 0;
+}
+
+.nav__links li:nth-child(1) {
+    padding: 0px 12px 0 0;
+}
+
+.nav__links li a {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+    font-size:var(--fs-h3) ;
+    transition: all 0.3s ease 0s;
+    color: var(--clr-dark);
+    text-decoration: none;
+}
+
+.nav__links li button {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+    font-size:var(--fs-h3) ;
+    transition: all 0.3s ease 0s;
+    color: var(--clr-accent);
+    text-decoration: none;
+    background-color: var(--clr-accent);
+    border: none;
+    cursor: pointer;
+}
+
+.nav__links li button:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-accent);
+}
+.nav__links li a:hover {
+    color: var(--clr-accent);
+}
+
+
 
