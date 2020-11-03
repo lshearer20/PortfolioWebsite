@@ -401,8 +401,8 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*min 300px but if has room it will*/
-    max-width: 1000px; /*added */
-    margin: 0 auto; /*added */
+    /*max-width: 1000px;*/ /*added */
+    /*margin: 0 auto; *//*added */
     /* max-width: ; margin: 0 auto; for a max width to the projects so it not one long string */
 
 }
@@ -481,7 +481,7 @@ header {
 }
 
 .portfolio-item-individual p { /* for paragraphs in here*/
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
