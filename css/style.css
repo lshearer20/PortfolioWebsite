@@ -7,7 +7,7 @@
 /* Custom properties*/
 
 :root {
-    --ff-third: 'Source Sans Pro', sans-serif;
+    --ff-third: 'Source Sans Pro', sans-serif; /*not used*/
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Source Code Pro', monospace;
 
@@ -72,13 +72,14 @@ strong { font-weight: var(--fw-bold);}
 /*buttons*/
 
 .btn {
+    font-family: var(--ff-primary);
     display: inline-block;
-    padding: .5em 2.5em;
+    padding: .7em 2.6em;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
@@ -401,14 +402,14 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*min 300px but if has room it will*/
-    /*max-width: 1000px;*/ /*added */
-    /*margin: 0 auto; *//*added */
+    max-width: 1300px; /*added */
+    margin: 0 auto; /*added */
     /* max-width: ; margin: 0 auto; for a max width to the projects so it not one long string */
 
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
@@ -434,7 +435,7 @@ header {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;    
+    padding: 1.5em 0;    
     font-size: var(--fs-h3);
     
 }
@@ -444,7 +445,7 @@ header {
 }
 
 .footer__link {
-    font-weight: )var(--fw-bold);
+    font-weight: var(--fw-bold);
 }
 
 .footer__link:hover,
@@ -460,7 +461,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 0.6em 0 0;
     padding: 0;
 }
 
